@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for novel project
+# Scrapy settings for quanbenNovel project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'novel'
+BOT_NAME = 'quanbenNovel'
 
-SPIDER_MODULES = ['novel.spiders']
-NEWSPIDER_MODULE = 'novel.spiders'
+SPIDER_MODULES = ['quanbenNovel.spiders']
+NEWSPIDER_MODULE = 'quanbenNovel.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'novel (+http://www.yourdomain.com)'
+#USER_AGENT = 'quanbenNovel (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -47,13 +47,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'novel.middlewares.NovelSpiderMiddleware': 543,
+#    'quanbenNovel.middlewares.QuanbennovelSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'novel.middlewares.NovelDownloaderMiddleware': 543,
+#    'quanbenNovel.middlewares.QuanbennovelDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -64,9 +64,9 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'novel.pipelines.NovelPipeline': 300,
-#}
+ITEM_PIPELINES = {
+   'quanbenNovel.pipelines.QuanbennovelPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html

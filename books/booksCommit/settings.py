@@ -65,7 +65,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   # 'booksCommit.pipelines.NoveldownloaderPipeline': 300,
+   # 'booksCommit.pipelines.NovelPipeline': 300,
     'scrapy_redis.pipelines.RedisPipeline':300,
 }
 

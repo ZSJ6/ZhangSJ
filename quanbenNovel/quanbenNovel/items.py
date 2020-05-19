@@ -8,7 +8,14 @@
 import scrapy
 
 
-class NovelItem(scrapy.Item):
+class QuanbennovelItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     pass
+
+
+class NovelItem(scrapy.Item):
+    categoryName = scrapy.Field()
+    bookName = scrapy.Field()
+    chapterName = scrapy.Field()
+    chapterContent = scrapy.Field()
